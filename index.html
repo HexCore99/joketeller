@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="/favicon/snowman.png" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="joke-type">
+        <select id="type">
+          <option id="" value="" disabled selected hidden>
+            -- Select a type --
+          </option>
+          <option class="opt" id="Any" value="Any">Any</option>
+          <option class="opt" id="Misc" value="Misc">Misc</option>
+          <option class="opt" id="Programming" value="Programming">
+            Programming
+          </option>
+          <option class="opt" id="dark" value="Dark">Dark</option>
+          <option value="Pun" class="opt" id="pun">Pun</option>
+          <option value="Spooky" class="opt" id="spooky">Spooky</option>
+          <option value="Christmas" class="opt" id="christmas">
+            Christmas
+          </option>
+        </select>
+      </div>
+      <!-- Loader -->
+      <span class="loader" hidden></span>
+      <!-- button -->
+      <button id="button">Tell Me A Joke</button>
+      <audio id="audio" controls hidden></audio>
+    </div>
+
+    <!-- Script -->
+    <script src="https://js.puter.com/v2/"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
